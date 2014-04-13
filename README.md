@@ -26,11 +26,12 @@ And then execute:
 
 You could probably also download/clone the repository and `rake install` it.
 
-**This gem may be very slow unless** you also install [GNU Scientific Library][gsl] and [rb-gsl][].  I've personally accomplished this on my Mac using [MacPorts][] (`port install gsl`), adding `gem 'rb-gsl'` to my `Gemfile`, and finally running `bundle` to install rb-gsl.
+**This gem may be very slow unless** you also install [GNU Scientific Library][gsl] and [rb-gsl][].  I've personally accomplished this on my Mac using [MacPorts][] (`port install gsl`), adding `gem 'rb-gsl'` to my `Gemfile`, and finally running `bundle` to install rb-gsl.  (As of this writing, this is a lie: I had [a problem with rb-gsl and MacPorts's GSL][gsl-gslcblas-issue].  I fixed it by patching and installing the rb-gsl gem locally.)
 
 [gsl]: https://www.gnu.org/software/gsl/
 [rb-gsl]: https://github.com/blackwinter/rb-gsl
 [MacPorts]: https://www.macports.org/
+[gsl-gslcblas-issue]: https://github.com/blackwinter/rb-gsl/issues/3
 
 ## Usage
 
